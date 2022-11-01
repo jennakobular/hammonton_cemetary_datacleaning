@@ -133,6 +133,8 @@ mean_lifespan_by_sex = dfcombined.pivot_table(
 )
 print (mean_lifespan_by_sex)
 
+"""doing some basic plots"""
+
 mean_lifespan_by_sex.plot(kind='bar', title= 'lifespan by sex')
 plt.savefig('lifespan_boxplot.png')
 dfcombined.plot(kind='hist', column='Lifespan')
